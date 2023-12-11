@@ -17,6 +17,7 @@ const NavigationBar = styled.nav`
     div svg {
         font-size: 24px;
         margin-top: 1rem;
+        cursor: pointer;
     }
 `
 

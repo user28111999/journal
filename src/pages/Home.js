@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div>
             <h1>Home Page</h1>
-            <button onClick={() => navigate('/add')}>Go to Add Page</button>
+            
         </div>
     );
 };

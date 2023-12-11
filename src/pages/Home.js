@@ -73,7 +73,7 @@ const Home = () => {
             id: 1,
             title: 'Journal Entry #1',
             description: 'Description...',
-            date: '11/12/2023 11:52',
+            date: '13/12/2023 11:52',
             important: false
         },
         {
@@ -87,10 +87,19 @@ const Home = () => {
             id: 3,
             title: 'Journal Entry #3',
             description: 'Description...',
-            date: '11/12/2023 11:52',
+            date: '01/12/2023 11:52',
+            important: false
+        },
+        {
+            id: 4,
+            title: 'Journal Entry #4',
+            description: 'Description...',
+            date: '01/12/2023 14:55',
             important: false
         }
     ]);
+    const [sortOrder, setSortOrder] = useState("Newest");
+    const [search, setSearch] = useState("");
 
     const navigate = useNavigate();
 
@@ -107,6 +116,7 @@ const Home = () => {
                     <option value="Important">Important</option>
                 </select>
                 <div className='search'>
+                    {/* <input type="text" placeholder="Search..." /> */}
                     <FontAwesomeIcon icon={faSearch} color="white" />
                 </div>
             </Header>
